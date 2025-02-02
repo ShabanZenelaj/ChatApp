@@ -4,7 +4,7 @@ import authenticate from "../middlewares/authenticate";
 
 const router = express.Router();
 
-// User Registration
+// Check if user exists for DM
 router.get("/dm", authenticate, checkDM);
 
 export default router;
